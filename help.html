@@ -1,0 +1,43 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">  
+    <style>  
+        body {  
+            margin: 0;  
+            padding: 0;  
+            font-family: Arial, sans-serif;  
+        }  
+        .box {  
+            display: flex;  
+            flex-direction: column;  
+            justify-content: flex-start;  
+            align-items: center;  
+            height: 100vh;  
+            padding: 20px;  
+        }  
+        .box div {  
+            width: 100%;  
+            margin: 5px;  
+            border-radius: 10px;  
+            background-color: #eeecec;  
+            text-align: center;  
+            padding: 20px;  
+            box-sizing: border-box; /* 确保padding不会增加元素的总宽度 */  
+        }  
+        h2, p {  
+            text-align: center;  
+            margin: 0;  
+            padding: 20px;  
+        }  
+    </style>  
+</head>  
+<body>  
+    <h2>帮助指南</h2>  
+    <p>Cool Wrist reading</p>  
+    <div class="box">  
+        <div onclick="window.location.href='index.html'">返回首页</div>  
+        <img src="https://zbw1026.github.io/st/help.png" alt="help" width="100%">
+    </div>  
+</body>  
+</html>
