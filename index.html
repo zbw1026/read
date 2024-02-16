@@ -3,10 +3,18 @@
 <head>  
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">  
     <style>  
+        /* 定义字体 */  
+@font-face {  
+    font-family: 'SyhtOTF'; /* 为字体定义一个名称 */  
+    src: url('syht.otf') format('opentype'), /* 用于Safari, Chrome, 和 Opera */  
+         url('syht.otf') format('woff2'), /* 用于Chrome和Opera */  
+         url('syht.otf') format('woff'), /* 用于Firefox和IE9+ */  
+         url('syht.otf') format('truetype'); /* 用于Safari, Android, 和 IE */  
+}  
         body {  
+            font-family: 'SyhtOTF', sans-serif;
             margin: 0;  
             padding: 0;  
-            font-family: Arial, sans-serif;  
         }  
         .box {  
             display: flex;  
@@ -24,17 +32,12 @@
             text-align: center;  
             padding: 20px;  
             color: #ffffff;
-            box-sizing: border-box; /* 确保padding不会增加元素的总宽度 */  
-        }  
-        h2, p {  
-            text-align: center;  
-            margin: 0;  
-            padding: 20px;  
-        }  
+            box-sizing: border-box;  
+        }   
     </style>  
 </head>  
 <body bgcolor="#000000">  
-    <h2 style="color: #ffffff;">酷腕读书(Web内测版)</h2>   
+    <h2 style="color: #4DD865;">酷腕读书(Web内测版)</h2>   
     <div class="box">  
         <div onclick="window.location.href='reading.html'">进入酷读</div>  
         <div onclick="window.location.href='books.html'">在线书城</div>  

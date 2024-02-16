@@ -22,9 +22,24 @@
       }
     }
   </script>
+  <style>
+     /* 定义字体 */  
+@font-face {  
+    font-family: 'SyhtOTF'; /* 为字体定义一个名称 */  
+    src: url('syht.otf') format('opentype'), /* 用于Safari, Chrome, 和 Opera */  
+         url('syht.otf') format('woff2'), /* 用于Chrome和Opera */  
+         url('syht.otf') format('woff'), /* 用于Firefox和IE9+ */  
+         url('syht.otf') format('truetype'); /* 用于Safari, Android, 和 IE */  
+}  
+        body {  
+            font-family: 'SyhtOTF', sans-serif;
+            margin: 0;  
+            padding: 0;  
+        }  
+  </style>
 </head>
 <body bgcolor="#000000" onload="checkURL()">
-  <h1 style="color: #ffffff;">软件更新</h1>
+  <h1 style="color: #4DD865;">软件更新</h1>
   <div id="result"></div>
 </body>
 </html>

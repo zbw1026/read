@@ -3,6 +3,19 @@
 <head>  
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <style>  
+        /* 定义字体 */  
+@font-face {  
+    font-family: 'SyhtOTF'; /* 为字体定义一个名称 */  
+    src: url('syht.otf') format('opentype'), /* 用于Safari, Chrome, 和 Opera */  
+         url('syht.otf') format('woff2'), /* 用于Chrome和Opera */  
+         url('syht.otf') format('woff'), /* 用于Firefox和IE9+ */  
+         url('syht.otf') format('truetype'); /* 用于Safari, Android, 和 IE */  
+}  
+        body {  
+            font-family: 'SyhtOTF', sans-serif;
+            margin: 0;  
+            padding: 0;  
+        }  
         .box {  
             display: flex;  
             flex-direction: column;  
@@ -28,8 +41,7 @@
     </script>
 </head>  
 <body  bgcolor="#000000">  
-    <h2 style="color: #ffffff;">在线书城</h2>
-    <p style="color: #ffffff;">Online Book City</p>
+    <h2 style="color: #4DD865;">在线书城</h2>
     <div class="box">  
         <div style="color: #ffffff;" onclick="copyText('https://zbw1026.github.io/st/%E9%9C%B8%E9%81%93%E6%80%BB%E8%A3%81%E7%88%B1%E4%B8%8A%E6%88%91%EF%BC%88aqtxt.net%EF%BC%89.txt')">霸道总裁爱上我</div>  
         <div style="color: #ffffff;" onclick="copyText('https://zbw1026.github.io/st/90.txt')">我们全村穿九零啦</div>  
